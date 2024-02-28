@@ -1,35 +1,53 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background-color: black;
+
+}
 #container {
   display: flex;
   justify-content: center;
-  position: relative;
-  top: 50%;
+  width: 1200px;
+  height: 550px;
 }
 
 #container-abuble {
   border-radius: 25px 0 0 25px;
-  height: 300px;
-  padding: 94px;
   background-color: #f5f5f5;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
 }
 
 #container-login {
   background-color: #9148ca;
-  padding: 60px 80px;
   border-radius: 0 25px 25px 0;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
 }
 
-#user-login {
-  width: 100px;
-  height: 100px;
+#user-login, img{
+  width: 130px;
+  height: 130px;
   background-color: white;
-  border-radius: 50px;
+  border-radius: 100%;
 }
+
 
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
+  gap: 24px;
 }
 
 form input {
@@ -38,6 +56,12 @@ form input {
   border: none;
   outline: none;
   background-color: #f5f5f5;
+  width: 250px;
+  height: 30px;
+}
+
+form input:focus {
+  border: 2px solid #000000;
 }
 
 form a {
@@ -54,5 +78,10 @@ form button {
   background-color: #f5f5f5;
   cursor: pointer;
   transition: 0.3s;
-  width: 100px;
+  width: 200px;
 }
+
+form button:hover {
+  background-color: black;
+  color: white;
+ }
